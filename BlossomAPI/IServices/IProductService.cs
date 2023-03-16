@@ -8,6 +8,7 @@ namespace BlossomAPI.IServices
         int InsertProduct(ProductItem productItem);
         void DeleteProduct(int id);
         void UpdateProduct(ProductItem productItem);
+        List<ProductItem> GetProductByCriteria(string NameBrand);
 
     }
 }

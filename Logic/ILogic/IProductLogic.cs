@@ -13,6 +13,7 @@ namespace Logic.ILogic
         int InsertProductItem(ProductItem productItem);
         void UpdateProductItem(ProductItem productItem);
         void DeleteProductItem(int id);
+        List<ProductItem> GetProductByCriteria(string NameBrand);
 
     }
 }

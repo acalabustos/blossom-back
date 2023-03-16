@@ -15,14 +15,20 @@ namespace Data
     {
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
         public DbSet<ProductItem> Products { get; set; }
-       
+        public DbSet<OrderItem> Orders { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<ProductItem>(entity => {
                 entity.ToTable("Products");
             });
-           
+
+            builder.Entity<OrderItem>(entity =>
+            {
+                entity.ToTable("Orders");
+                entity.HasOne<ProductItem>().WithMany().HasForeignKey(o => o.IdProduct);
+            });
         }
     }
     public class ServiceContextFactory : IDesignTimeDbContextFactory<ServiceContext>

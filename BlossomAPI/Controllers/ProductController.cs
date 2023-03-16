@@ -43,6 +43,11 @@ namespace BlossomAPI.Controllers
             _productService.UpdateProduct(productItem);
         }
 
+        [HttpGet(Name = "GetProductsByCriteria")]
+        public List<ProductItem> GetProductByCriteria([FromQuery] string NameBrand)
+        {
 
+            return _productService.GetProductByCriteria(NameBrand);
+        }
     }
 }

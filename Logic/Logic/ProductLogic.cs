@@ -40,6 +40,22 @@ namespace Logic.Logic
             _serviceContext.SaveChanges();
 
         }
+        public List<ProductItem> GetProductByCriteria(string NameBrand)
+        {
+            var brandFilter = new ProductItem();
+            brandFilter.NameBrand = NameBrand;
+
+            var resultList = _serviceContext.Set<ProductItem>()
+                                .Where(p => p.NameBrand == NameBrand);
+
+            if (brandFilter.NameBrand == NameBrand)
+            {
+                resultList = resultList.Where(p => p.NameBrand == NameBrand);
+            }
+
+
+            return resultList.ToList();
+        }
 
     }
 }

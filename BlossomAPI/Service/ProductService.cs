@@ -30,6 +30,9 @@ namespace BlossomAPI.Service
         {
             _productLogic.UpdateProductItem(productItem);
         }
-
+        List<ProductItem> IProductService.GetProductByCriteria(string NameBrand)
+        {
+            return _productLogic.GetProductByCriteria(NameBrand);
+        }
     }
 }
