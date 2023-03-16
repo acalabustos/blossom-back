@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlossomAPI", "BlossomAPI\Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{11A535FD-4012-4CCE-9EFC-CC3294EA0169}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{D2A3F7D4-B081-40A4-A06E-DA6806B05901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{F7E3A515-0F7B-40F8-B527-31BA67EDB4CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{11A535FD-4012-4CCE-9EFC-CC3294EA0169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11A535FD-4012-4CCE-9EFC-CC3294EA0169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11A535FD-4012-4CCE-9EFC-CC3294EA0169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A3F7D4-B081-40A4-A06E-DA6806B05901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A3F7D4-B081-40A4-A06E-DA6806B05901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A3F7D4-B081-40A4-A06E-DA6806B05901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A3F7D4-B081-40A4-A06E-DA6806B05901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E3A515-0F7B-40F8-B527-31BA67EDB4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E3A515-0F7B-40F8-B527-31BA67EDB4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E3A515-0F7B-40F8-B527-31BA67EDB4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E3A515-0F7B-40F8-B527-31BA67EDB4CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

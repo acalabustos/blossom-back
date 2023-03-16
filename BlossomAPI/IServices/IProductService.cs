@@ -1,6 +1,13 @@
-﻿namespace BlossomAPI.IServices
+﻿using Entities.Entities;
+
+namespace BlossomAPI.IServices
 {
-    public class IProductService
+    public interface IProductService
     {
+        List<ProductItem> GetAllProducts();
+        int InsertProduct(ProductItem productItem);
+        void DeleteProduct(int id);
+        void UpdateProduct(ProductItem productItem);
+
     }
 }
